@@ -1,0 +1,166 @@
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif;
+}
+.sections1
+{
+ 
+ 
+   min-height: 100vh;
+ 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #149279;
+}
+section .circles
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #fafafa;
+   clip-path:circle(70% at right -20%);
+}
+header{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   padding:40px 100px;
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+}
+header.logos
+{
+   position:relative;
+   max-width:150px;
+}
+header .navigation
+{
+   position:relative;
+   display:flex;
+   margin-left:200px;
+}
+header .navigation li
+{
+list-style:none;
+color:#149279;
+}
+header .navigation :hover
+{
+list-style:none;
+color:#149279;
+
+}
+header .navigation li a{
+   display:inline-block;
+   color:black;
+   font-weight:500;
+   text-decoration:none;
+   margin-left:40px;
+}
+
+.content
+{
+   position:relative;
+   width:100%;
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   padding-left:110px;
+}
+.content .textBox
+{
+   position:relative;
+   max-width:600px;
+   margin-right:20px;
+}
+.content .textBox h2
+{
+   color:black;
+   font-size:3em;
+   margin-bottom:10px;
+   line-height:1.4em;
+   font-weight:700
+}
+.content .textBox p
+{
+   color:black;
+   font-size:17px;
+}
+.content .textBox a
+{
+   display:inline-block;
+   margin-top:20px;
+   padding: 8px 20px;
+   background:#fafafa;
+   color:black;
+   border-radius:40px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   text-decoration: none;
+}
+
+.sci
+{
+   position: absolute;
+   bottom: 40px;
+   left: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.sci li{
+   list-style: none;
+}
+.sci li a{
+   display: inline-block;
+   margin-left: 15px;
+   background:#149279;
+   width:50px ;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   transition: 0.2s ease-in-out;
+}
+.sci li a:hover
+{
+   background: gainsboro;
+   transform: translateY(-10px);
+}
+.sci li a img{
+   filter: invert(1);
+   transform: scale(0.5);
+}
+
+/********slider*********/
+.swiper-container {
+   width: 100%;
+   padding-top: 50px;
+   padding-bottom: 50px;
+ }
+
+ .swiper-slide {
+   background-position: center;
+   background-size: cover;
+   width: 300px;
+   height: 300px;
+
+ }
+ .content .imgBox{
+  width:900px;
+  display: flex;
+  padding-left:300px;
+ }
+ .content .imgBox img{
+    max-width: 150px;
+ }
+ 

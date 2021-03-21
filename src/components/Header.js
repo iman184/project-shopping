@@ -1,8 +1,8 @@
 import React,{useState,useContext} from 'react'
-import Menu from './svg/bars-solid.svg'
-import Close from './svg/times-solid.svg'
+
 import Cart from './svg/Cart.svg'
 import {Link} from 'react-router-dom'
+import Logo from './img/Iwatch_Flatline.svg'
 import {DataContext} from './DataProvider'
 export default function Header(){
 
@@ -16,30 +16,24 @@ export default function Header(){
         left: menu ? 0 : "-100%"
     }
     return(
-        <header>
-              <div className="menu" onClick={toggleMenu}>
-            <img src={Menu} alt="" width="30"/>
+
+       <header>
+       <div >
+        <Link to='/products'><img src={Logo} width="28%" class="logos"></img></Link>
         </div>
-        <div className="logo">
-            <h1><Link to="/products">Citizen</Link></h1>
-        </div>
-        <ul style={styleMenu}>
-            <li><Link  to="/">Home</Link></li>
-            <li><Link to="/products">Products</Link></li>
-            <li><Link to="/">About</Link></li>
-            <li><Link to="/">Contact</Link></li>
-            <li><Link to="/">Login / Register</Link></li>
-            <li onClick={toggleMenu}>
-            <img src={Close} alt='' width="30" className="menu"/>
-            </li>
-        </ul>
-        <div className="cart-icon">
+        <ul class="navigation">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/products">Products</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+         <li><Link to="/login">Login / Register</Link></li>
+         </ul>
+           <div className="cart-icon">
         <span>{cart.length}</span>
         <Link to="/cart">
          <img src={Cart} alt="" width="30"/>
         </Link>
         </div>
-      
-      </header>
+        </header>
     )
 }

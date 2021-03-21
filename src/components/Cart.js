@@ -51,7 +51,7 @@ export default function Cart() {
     
   
    if(cart.length === 0)
-   return <h2 style={{textAlign:"center",fontSize:"5rem"}}>Cart Empty</h2>
+   return <h2 style={{textAlign:"center",fontSize:"5rem",paddingTop:"150px"}}>Cart Empty</h2>
     return (
         <>
          {
@@ -62,6 +62,7 @@ export default function Cart() {
                        />
                    
                    <div className="box-details">
+                   <div className="delete" onClick={()=> removeProduct(product._id)}>X</div>
                       <h2 title={product.title}>{product.title}</h2>
                       <h3>${product.price}</h3>
                       <Colors colors={product.colors}/>
@@ -69,11 +70,12 @@ export default function Cart() {
                           <p>{product.description}</p>
                           <p>{product.content}</p>
                         <div className='amount'>
-                          <button className="count" onClick={() => reduction(product._id)}>-</button>
-                          <span>{product.count}</span>
-                          <button className="count" onClick={() => increase(product._id)}>+</button>
+                          
+                          <button className="count" onClick={() => reduction(product._id)}>- </button>
+                          <span> {product.count} </span>
+                          <button className="count" onClick={() => increase(product._id)}> +</button>
                           </div>
-                          <div className="delete" onClick={()=> removeProduct(product._id)}>X</div>
+                         
                    </div>
                  </div>
              ))

@@ -1,4 +1,5 @@
-* {
+
+ *{
   padding: 0;
   box-sizing: border-box;
   margin: 0;
@@ -20,35 +21,7 @@ code {
   box-shadow: 0 2px 6px #555;
   padding: 0 15px;
 }
-/* -------------------Header----------------- */
-header{
-  width: 100%;
-  min-height: 100px;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 20px;
-}
-a{
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #555;
-  letter-spacing: 2px;
-}
-a:hover{
-  color: lightseagreen;
-}
-ul li{
-  list-style: none;
-  display: inline-block;
-  padding: 0 15px;
-}
-.menu{
-  display: none;
-}
+ 
 .cart-icon{
   position: relative;
   margin-right: 15px;
@@ -65,13 +38,15 @@ ul li{
 }
 
 
-/* ---------------Products--------------- */
-.products{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 15px 0;
+ /*---------------Products--------------- */
+ .products{
+  position:relative;
+   width:100%;
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   background-color: #fafafa;
+  
 }
 .products .card{
   max-width: 370px;
@@ -80,8 +55,11 @@ ul li{
   height: 570px;
   box-shadow: 0 0 5px #ccc;
   padding: 15px;
-  margin: 15px;
+  margin-top: 150px;
+  margin-left:100px;
+  margin-right:150px;
   cursor: pointer;
+  background-color: white;
 }
 .card img{
   width: 100%;
@@ -93,11 +71,12 @@ ul li{
 .card .box{
   margin: 15px 0;
 }
-.card .box h3{
+.card .box h2{
   text-transform: uppercase;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+ text-align: center;
+
+ font-style: oblique;
+
 }
 .card .box p{
   margin: 10px 0;
@@ -124,7 +103,7 @@ ul li{
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-/* -----------------------Details--------------- */
+ /*-----------------------Details--------------- */
 .details{
   width: 100%;
   display: flex;
@@ -135,7 +114,7 @@ ul li{
 .details .img-container{
   max-width: 400px;
   width: 100%;
-  margin: 20px;
+  margin: 120px;
   height: 450px;
   background-position: center;
   background-size: cover;
@@ -150,11 +129,11 @@ ul li{
 .box-details{
   max-width: 500px;
   width: 100%;
-  margin: 20px;
+  margin: 120px;
 }
 .box-details h2{
   text-transform: uppercase;
-  color: darkblue;
+  color: #149279;
   letter-spacing: 2px;
   font-size: 2rem;
 }
@@ -166,6 +145,7 @@ ul li{
   color: white;
   margin-right: 5px;
   margin-top: 10px; 
+  text-decoration: none;
 }
 .box-details button,
 .box-details .cart{
@@ -251,7 +231,7 @@ ul li{
   }
 }
 
-/* ****** Cart ********************** */
+****** Cart **********************
 .cart{
   position: relative;
   border: 1px solid #ccc;
@@ -259,7 +239,7 @@ ul li{
 }
 .amount span{
   color: crimson;
-  padding: 0 20px;
+  padding: 10 20px;
 }
 .amount .count{
   width: 40px;
@@ -271,7 +251,7 @@ ul li{
 }
 .delete{
   position: absolute;
-  top:0;
+  top:2;
   right: 5px;
   color: crimson;
   cursor: pointer;
@@ -287,7 +267,8 @@ ul li{
 .total a{
   background: #333;
   color: white;
-  padding: 10px 25px
+  padding: 10px 25px;
+  margin-left: 10px;
 }
 .total h3{
   margin-right: 50px;
