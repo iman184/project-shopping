@@ -53,9 +53,7 @@ class Home extends Component {
               <div className="swiper-wrapper">
                 <div className="swiper-slide"><img src={Image} /></div>
                 <div className="swiper-slide"><img src= {Image1}/></div>
-                <div className="swiper-slide"><img src={Image2} /></div>
-                <div className="swiper-slide"><img src={Image3} /></div>
-                <div className="swiper-slide"><img src={Image4}/></div>
+                
               </div>
             </div>
           </div>
